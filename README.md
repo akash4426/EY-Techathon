@@ -1,86 +1,86 @@
-# Federated Agentic AI Platform for Predictive Vehicle Maintenance  
-### Author: Akash Karri 
+# 🚗 Federated Agentic AI Platform for Predictive Vehicle Maintenance
+
+### Author: Akash Karri  
 ### EY Techathon 6.0 – Challenge 3
 
 ---
 
-## 🚗 Project Overview
+## 🌟 Project Vision
 
-Modern vehicles produce large volumes of telematics data, yet breakdowns continue to occur due to limited real-time intelligence and centralized analytics constraints. OEMs also struggle with uneven service loads, inefficient scheduling, reactive customer engagement, and lack of manufacturing feedback loops.  
-This project proposes a **Federated Agentic AI Platform** that delivers a complete, privacy-preserving, end-to-end predictive maintenance ecosystem.
+Modern vehicles generate vast telematics data streams, yet unexpected breakdowns persist due to limitations in real-time insight and centralized analytics. OEMs also struggle with inconsistent maintenance outcomes and privacy hurdles.
 
-The platform integrates:  
-- **Federated Learning (FL)** for collaborative model training without sharing raw data  
-- **Agentic AI Architecture** for autonomous diagnostics, communication, scheduling, forecasting, RCA/CAPA, and security  
-- **Gemini LLM** for personalized, human-readable maintenance explanations  
-- **Streamlit Dashboard** for interactive real-time demonstration  
-
-This repository contains the working prototype submitted for Zone-2 of EY Techathon 6.0.
+**This platform introduces a breakthrough: A privacy-preserving, agentic AI ecosystem for predictive maintenance, powered by Federated Learning and multi-agent orchestration.**
 
 ---
 
-## 🧠 Key Features
+## 🧩 Solution Highlights
 
-### **1. Federated Learning–Powered Failure Prediction**
-- Local vehicle nodes simulate decentralized telematics data.
-- Each node trains a model locally using **SGDClassifier**.
-- **FedAvg aggregation** produces a global predictive model.
-- AUC progression is plotted across rounds.
+- **Federated Learning:** Collaborative model training at the edge—no raw data leaves the vehicle!
+- **Agentic AI System:** Autonomous agents diagnose, forecast, communicate, schedule, and secure.
+- **Gemini LLM Integration:** Human-readable explanations tailored for vehicle owners.
+- **Interactive Streamlit Dashboard:** Real-time simulation, insights, and recommendations.
 
-### **2. Agentic AI System**
-The system is orchestrated by a **Master Agent**, with specialized Worker Agents:
+*This repository showcases the working prototype submitted for Zone-2, EY Techathon 6.0.*
 
-- **Telemetry Analysis Agent**  
-- **Failure Prediction Agent**  
-- **Communication Agent (Gemini-LangChain based)**  
-- **Demand Forecasting Agent**  
-- **Service Scheduling Agent**  
-- **Service Lifecycle Agent**  
-- **RCA / CAPA Insights Agent**  
-- **UEBA Security Agent**
+---
 
-### **3. Real-Time Dashboard (Streamlit)**
-- Adjust telematics parameters using sliders  
-- Get failure probability and classification  
-- Component-wise diagnostic breakdown (Engine, Cooling, Suspension, Usage Fatigue)  
-- Trend visualization (simulated last 10 trips)  
-- FL AUC-vs-Rounds chart  
-- Gemini-powered explanation for recommended action  
+## 🚀 Key Features
 
-### **4. Privacy, Security & Compliance**
-- No raw telematics data ever leaves the node  
-- UEBA-based agent behavior monitoring  
-- Modular, scalable multi-agent architecture
+### 1. Predictive Maintenance via Federated Learning
+- Local nodes simulate decentralized vehicle data and train ML models.
+- Global model aggregated via FedAvg; performance tracked across rounds.
+- AUC chart visualizes learning progress.
+
+### 2. Multi-Agent AI Architecture
+Orchestrated by a **Master Agent**, with dedicated Worker Agents for:
+- Telemetry Analysis
+- Failure Prediction
+- Owner Communication (Gemini-LangChain)
+- Demand Forecasting
+- Service Scheduling
+- Lifecycle Management
+- RCA/CAPA Insights
+- UEBA Security Surveillance
+
+### 3. Real-Time Dashboard
+- Sliders for telematics input simulation
+- Instant failure probability & classification
+- Diagnostics: Engine, Cooling, Suspension, Usage Fatigue
+- Trends: Last 10 simulated trips
+- Federated Learning progress chart
+- Gemini-powered recommendations
+
+### 4. Privacy, Security & Compliance
+- Raw data remains local—privacy by design
+- Continuous behavioral monitoring via UEBA agent
+- Modular, scalable architecture ready for expansion
 
 ---
 
 ## 🏗️ System Architecture
 
-The architecture consists of:
-
-- **Vehicle Nodes (FL Clients):** Perform local training on synthetic telemetry  
-- **Federated Learning Server:** Aggregates model weights -> global model  
-- **Master Orchestrator Agent:** Central controller  
-- **Worker Agents:** Execute tasks based on risk, telemetry, and system conditions  
-- **Owner Interface:** Voice or mobile notification (concept)  
-- **Dashboards:** Maintenance, forecasting, RCA  
-
-(Architecture diagram included in PPT submission)
+- **Vehicle Nodes (FL Clients):** Local training on synthetic telemetry
+- **FL Server:** Aggregates weights → global model
+- **Master Orchestrator:** Central controller of agents
+- **Worker Agents:** Specialized tasks per system state
+- **Owner Interface:** Concept for notifications (voice/mobile)
+- **Dashboards:** Maintenance, forecasting, RCA
+- *(Architecture diagram available in PPT submission)*
 
 ---
 
-## 🔧 Tech Stack
+## 🛠️ Tech Stack
 
-| Layer | Tools / Technologies |
-|-------|----------------------|
-| Programming | Python 3.10 |
-| ML Frameworks | Scikit-learn, Flower (Federated Learning) |
-| Dashboard | Streamlit |
-| LLM | Google Gemini Pro |
-| Data | Synthetic telematics simulator |
-| Visualization | Matplotlib, Streamlit native charts |
-| Security | UEBA conceptual framework |
-| Deployment | Local / modular microservice-ready |
+| Layer         | Tools / Technologies                 |
+|---------------|-------------------------------------|
+| Programming   | Python 3.10                         |
+| ML Frameworks | Scikit-learn, Flower (FL)           |
+| Dashboard     | Streamlit                           |
+| LLM           | Google Gemini Pro                   |
+| Data          | Synthetic telemetry simulator        |
+| Visualization | Matplotlib, Streamlit charts         |
+| Security      | UEBA conceptual framework           |
+| Deployment    | Local / microservice-ready           |
 
 ---
 
@@ -97,3 +97,26 @@ The architecture consists of:
 ├── streamlit_app.py
 ├── README.md
 ├── requirements.txt
+```
+
+---
+
+## 📞 Contact & Credits
+
+*For any queries or collaborations, reach out to Akash Karri.*
+
+---
+
+## 🏆 Awards & Recognition
+
+- Prototype submitted for EY Techathon 6.0, Zone-2.
+
+---
+
+## 💡 Future Directions
+
+- Expand agentic architecture for EVs and commercial fleets.
+- Integrate advanced anomaly detection and reinforcement learning.
+- Real-world pilot with OEM partners.
+
+---
